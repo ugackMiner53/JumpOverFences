@@ -1,35 +1,33 @@
 package com.martmists.jumpoverfences
 
-import net.minecraft.block.Block
 import net.minecraft.block.FenceBlock
 import net.minecraft.block.WallBlock
 import net.minecraft.client.network.ClientPlayerEntity
 import net.minecraft.util.math.BlockPos
-import net.minecraft.world.World
 
 
 object JumpChecker {
+    private val offsets = arrayOf(
+        arrayOf(-1, 0),
+        arrayOf(1, 0),
+        arrayOf(0, 1),
+        arrayOf(0, -1),
+        arrayOf(1, 1),
+        arrayOf(-1, 1),
+        arrayOf(1, -1),
+        arrayOf(-1, -1)
+    )
+
     fun shouldJumpFence(player: ClientPlayerEntity): Boolean {
-        return (player.input.jumping && nextToFence(player))
-    }
-
-    private fun nextToFence(player: ClientPlayerEntity): Boolean {
-        val x = player.pos.x
-        val z = player.pos.z
-        for (i in -1..1) {
-            for (j in -1..1) {
-                if (i.toDouble() != x || j.toDouble() != z) {
-                    val block = getBlock(player.entityWorld, BlockPos(x + i.toDouble(), player.pos.getY(), z + j.toDouble()))
-                    if (block is FenceBlock || block is WallBlock) {
-                        return true
-                    }
-                }
-            }
+        return player.input.jumping && offsets.any {
+            val block = player.entityWorld.getBlockState(
+                BlockPos(
+                    player.x + it[0],
+                    player.y,
+                    player.z + it[1]
+                )
+            ).block
+            block is FenceBlock || block is WallBlock
         }
-        return false
-    }
-
-    private fun getBlock(world: World, pos: BlockPos): Block {
-        return world.getBlockState(pos).block
     }
 }
