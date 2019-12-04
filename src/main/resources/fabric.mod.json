@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "jumpoverfences",
+  "version": "${version}",
+  "name": "JumpOverFences",
+  "description": "Allows you to jump over fences and walls",
+  "authors": [
+    "Martmists"
+  ],
+  "contact": {
+    "sources": "https://dilaton.martmists.com/martmists/jumpoverfences"
+  },
+  "license": "MIT",
+  "icon": "assets/jof/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "com.martmists.jumpoverfences.JumpOverFencesMod"
+      }
+    ]
+  },
+  "mixins": [
+    "jof.mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}

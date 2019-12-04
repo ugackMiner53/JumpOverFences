@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.martmists.jumpoverfences.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ClientPlayerEntityMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
