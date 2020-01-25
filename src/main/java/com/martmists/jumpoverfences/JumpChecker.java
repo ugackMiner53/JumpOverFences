@@ -1,4 +1,4 @@
-package org.anticrustlicensinginitiative.jumpoverfences;
+package com.martmists.jumpoverfences;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceBlock;

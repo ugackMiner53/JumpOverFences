@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "org.anticrustlicensinginitiative.jumpoverfences.mixin",
+  "package": "com.martmists.jumpoverfences.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ClientPlayerEntityMixin"

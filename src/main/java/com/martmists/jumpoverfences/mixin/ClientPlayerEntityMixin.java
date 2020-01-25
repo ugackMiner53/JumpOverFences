@@ -1,7 +1,7 @@
-package org.anticrustlicensinginitiative.jumpoverfences.mixin;
+package com.martmists.jumpoverfences.mixin;
 
 import com.mojang.authlib.GameProfile;
-import org.anticrustlicensinginitiative.jumpoverfences.JumpChecker;
+import com.martmists.jumpoverfences.JumpChecker;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.world.ClientWorld;
