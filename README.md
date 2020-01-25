@@ -2,6 +2,8 @@
 
 An open-source fork of https://dilaton.martmists.com/Martmists/JumpOverFences
 
+It allows you to jump over fences and walls, it only needs to be installed client-side, but server-side can prevent this mod from working.
+
 ## Why a Fork?
 
 Martmists changed all of the licenses of his mods from MIT to a very restrictive license. This is a continuation of the mod from when it was open source, in an effort to preserve user and developer freedom.
