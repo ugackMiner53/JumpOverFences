@@ -15,9 +15,6 @@
   "license": "MIT",
   "icon": "assets/jumpoverfences/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "client": ["org.anticrustlicensinginitiative.jumpoverfences.JumpOverFencesMod"]
-  },
   "mixins": [
     "jumpoverfences.mixin.json"
   ],
