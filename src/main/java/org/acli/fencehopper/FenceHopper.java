@@ -1,4 +1,4 @@
-package com.martmists.jumpoverfences;
+package org.acli.fencehopper;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceBlock;
@@ -6,7 +6,7 @@ import net.minecraft.block.WallBlock;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 
-public class JumpChecker {
+public class FenceHopper {
 	private static Integer[] offsetsX = new Integer[] { -1, 1, 0, 0, 1, -1, 1, -1 };
 	private static Integer[] offsetsZ = new Integer[] { 0, 0, 1, -1, 1, 1, -1, -1 };
 

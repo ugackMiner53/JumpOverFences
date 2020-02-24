@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.martmists.jumpoverfences.mixin",
+  "package": "org.acli.fencehopper.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ClientPlayerEntityMixin"

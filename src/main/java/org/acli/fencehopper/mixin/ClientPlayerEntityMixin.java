@@ -1,7 +1,7 @@
-package com.martmists.jumpoverfences.mixin;
+package org.acli.fencehopper.mixin;
 
 import com.mojang.authlib.GameProfile;
-import com.martmists.jumpoverfences.JumpChecker;
+import org.acli.fencehopper.FenceHopper;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.world.ClientWorld;
@@ -15,7 +15,7 @@ class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {
 
     @Override
     protected float getJumpVelocity(){
-        if (JumpChecker.shouldJumpFence((ClientPlayerEntity)(Object)this)) {
+        if (FenceHopper.shouldJumpFence((ClientPlayerEntity)(Object)this)) {
             return super.getJumpVelocity() + 0.05f;
         } else {
             return super.getJumpVelocity();
