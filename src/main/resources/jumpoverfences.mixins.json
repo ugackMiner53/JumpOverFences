@@ -1,8 +1,10 @@
 {
   "required": true,
-  "package": "org.acli.fencehopper.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "package": "com.ugackMiner.jumpoverfences.mixin",
+  "compatibilityLevel": "JAVA_16",
   "mixins": [
+  ],
+  "client": [
     "ClientPlayerEntityMixin"
   ],
   "injectors": {

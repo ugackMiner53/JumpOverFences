@@ -1,24 +1,25 @@
 {
-  "schemaVersion": 1,
-  "id": "fencehopper",
-  "version": "${version}",
-  "name": "Fence Hopper",
-  "description": "A mod that allows you to jump over fences and walls.",
-  "authors": [
-    "AntiCrustLicensingInitiative",
-    "Martmists"
-  ],
-  "contact": {
-    "sources": "https://github.com/AntiCrustLicensingInitiative/JumpOverFences",
-    "issues": "https://github.com/AntiCrustLicensingInitiative/JumpOverFences/issues"
-  },
-  "license": "LGPL-3.0-or-later",
-  "icon": "assets/fencehopper/icon.png",
-  "environment": "client",
-  "mixins": [
-    "fencehopper.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.4.0"
+    "schemaVersion": 1,
+    "id": "jumpoverfences",
+    "version": "${version}",
+    "name": "Jump over fences",
+    "description": "A mod that allows you to jump over fences and walls.",
+    "authors": [
+      "AntiCrustLicensingInitiative",
+      "Martmists",
+      "ugackMiner"
+    ],
+    "contact": {
+      "sources": "https://github.com/AntiCrustLicensingInitiative/JumpOverFences",
+      "issues": "https://github.com/AntiCrustLicensingInitiative/JumpOverFences/issues"
+    },
+    "license": "LGPL-3.0-or-later",
+    "icon": "assets/jumpoverfences/icon.png",
+    "environment": "client",
+    "mixins": [
+      "fencehopper.mixins.json"
+    ],
+    "depends": {
+      "fabricloader": ">=0.4.0"
+    }
   }
-}
