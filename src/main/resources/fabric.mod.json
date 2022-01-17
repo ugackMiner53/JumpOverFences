@@ -17,7 +17,7 @@
     "icon": "assets/jumpoverfences/icon.png",
     "environment": "client",
     "mixins": [
-      "fencehopper.mixins.json"
+      "jumpoverfences.mixins.json"
     ],
     "depends": {
       "fabricloader": ">=0.4.0"
